@@ -11,5 +11,8 @@ The public Figma canvas is viewable, but original asset export/inspection was no
 - [x] Create index.html, styles.css, landing.js and local product images.
 - [x] Verify mobile menu, catalog filtering, product dialogs, and cart feedback with keyboard support.
 - [x] Check responsive layout at mobile/tablet/desktop sizes, local links and image loading.
-- [ ] Add README and GitHub Pages configuration; commit all lab source files and PDF to the requested repository.
-- [ ] Push and verify the GitHub Pages deployment, if repository authentication permits.
+- [x] Add README and GitHub Pages configuration; commit all lab source files and PDF to the requested repository.
+- [x] Push and verify the GitHub Pages deployment, if repository authentication permits.
+
+## Verification result
+Browser checks passed at 375px, 768px and 1280px. GitHub Pages build for e2c8b0a completed successfully; the live page returned HTTP 200 and contained all 8 cards. Original Figma asset export remains unavailable as documented above.
