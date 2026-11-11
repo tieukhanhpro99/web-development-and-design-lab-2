@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore VibeTech’s curated collection of workspace essentials. A responsive landing page for Web Development and Design Lab 2.">
+  <meta name="theme-color" content="#ffffff">
+  <title>VibeTech — Elevate Your Everyday</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="landing.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#products">Skip to products</a>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol><symbol id="arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol></svg>
+  <header class="site-header">
+    <div class="navbar container">
+      <a class="brand" href="#home" aria-label="VibeTech home"><img src="assets/logo.svg" width="26" height="26" alt="">VibeTech</a>
+      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#products" data-filter="all">Products</a><a href="#products" data-filter="sale">Deals</a><a href="#about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button cart-toggle" type="button" aria-label="Open shopping bag"><svg aria-hidden="true"><use href="#bag"/></svg><span id="cart-count" hidden>0</span></button>
+        <button class="menu-toggle icon-button" type="button" aria-label="Open navigation" aria-controls="main-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero container" aria-labelledby="hero-title">
+      <p class="eyebrow">WORKSPACE ESSENTIALS, ELEVATED</p>
+      <h1 id="hero-title">Unleash the Next Level</h1>
+      <p>Explore our curated collection of professional workspace gear, crafted to elevate<br class="desktop-break"> your daily productivity and creative flow.</p>
+    </section>
+    <section class="catalog" id="products" aria-label="Workspace products">
+      <div class="container">
+        <div class="catalog-heading"><h2 id="catalog-title">The collection <span>08 essentials</span></h2><button id="show-all" type="button" hidden>Show all products <span aria-hidden="true">↗</span></button></div>
+        <div class="product-grid">
+          <article class="product-card" data-product="mouse" data-name="Wireless Mouse" data-price="59.00" data-sale="false">
+            <button class="product-image" type="button" aria-label="View details for Wireless Mouse">
+              <span class="badge hot">Hot</span>
+              <img src="assets/mouse.jpg" alt="An ergonomic light-colored wireless mouse." width="800" height="600" fetchpriority="high">
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">ACCESSORIES</p><h3>Wireless Mouse</h3><p class="price">$59.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add Wireless Mouse to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-product="keyboard" data-name="Tactix K85 Mechanical" data-price="129.00" data-sale="false">
+            <button class="product-image" type="button" aria-label="View details for Tactix K85 Mechanical">
+
+              <img src="assets/keyboard.jpg" alt="A compact mechanical keyboard with light-colored keys." width="800" height="600" >
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">KEYBOARDS</p><h3>Tactix K85 Mechanical</h3><p class="price">$129.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add Tactix K85 Mechanical to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-product="headphones" data-name="ZenSound ANC Headset" data-price="189.00" data-sale="false">
+            <button class="product-image" type="button" aria-label="View details for ZenSound ANC Headset">
+
+              <img src="assets/headphones.jpg" alt="Over-ear wireless headphones on a yellow background." width="800" height="600" >
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">AUDIO</p><h3>ZenSound ANC Headset</h3><p class="price">$189.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add ZenSound ANC Headset to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-product="watch" data-name="NovaFit Smart Watch" data-price="99.00" data-sale="true">
+            <button class="product-image" type="button" aria-label="View details for NovaFit Smart Watch">
+              <span class="badge sale">Sale</span>
+              <img src="assets/watch.jpg" alt="A minimalist watch with a light-colored strap." width="800" height="600" >
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">WEARABLES</p><h3>NovaFit Smart Watch</h3><p class="price">$99.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add NovaFit Smart Watch to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-product="monitor" data-name="Horizon 27” IPS QHD Display" data-price="299.00" data-sale="false">
+            <button class="product-image" type="button" aria-label="View details for Horizon 27” IPS QHD Display">
+              <span class="badge new">New</span>
+              <img src="assets/monitor.jpg" alt="A desktop monitor with a slim stand." width="800" height="600" loading="lazy">
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">MONITORS</p><h3>Horizon 27” IPS QHD Display</h3><p class="price">$299.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add Horizon 27” IPS QHD Display to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-product="microphone" data-name="StreamMic Pro Cardioid" data-price="149.00" data-sale="false">
+            <button class="product-image" type="button" aria-label="View details for StreamMic Pro Cardioid">
+
+              <img src="assets/microphone.jpg" alt="A professional microphone for recording and streaming." width="800" height="600" loading="lazy">
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">AUDIO</p><h3>StreamMic Pro Cardioid</h3><p class="price">$149.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add StreamMic Pro Cardioid to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-product="lamp" data-name="Lumos RGB Smart Desk Lamp" data-price="45.00" data-sale="true">
+            <button class="product-image" type="button" aria-label="View details for Lumos RGB Smart Desk Lamp">
+              <span class="badge sale">Sale</span>
+              <img src="assets/lamp.jpg" alt="A desk lamp illuminating a workspace." width="800" height="600" loading="lazy">
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">ACCESSORIES</p><h3>Lumos RGB Smart Desk Lamp</h3><p class="price">$45.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add Lumos RGB Smart Desk Lamp to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-product="laptop" data-name="ErgoStand Aluminium Laptop Riser" data-price="69.00" data-sale="false">
+            <button class="product-image" type="button" aria-label="View details for ErgoStand Aluminium Laptop Riser">
+
+              <img src="assets/laptop.jpg" alt="An aluminium laptop in a minimal workspace." width="800" height="600" loading="lazy">
+              <span class="image-caption">A closer look <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+            </button>
+            <div class="product-content"><p class="category">ACCESSORIES</p><h3>ErgoStand Aluminium Laptop Riser</h3><p class="price">$69.00</p>
+              <button class="add-to-cart" type="button" aria-label="Add ErgoStand Aluminium Laptop Riser to bag"><svg aria-hidden="true"><use href="#bag"/></svg>Add to Cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="about" class="site-footer container"><p>© 2026 VibeTech. Designed for Web Development Practice.</p><p class="lab-links">Lab 2 <span aria-hidden="true">/</span> <a href="exercise1.html">Exercise 1</a><a href="excercise2.html">Exercise 2</a><a href="excercise3.html">Exercise 3</a></p></footer>
+  <div id="notification" class="notification" role="status" aria-live="polite"></div>
+  <dialog id="product-dialog" aria-labelledby="detail-title"><button class="dialog-close icon-button" type="button" aria-label="Close product details">×</button><img id="detail-image" alt="" width="800" height="600"><div class="dialog-content"><p class="category" id="detail-category"></p><h2 id="detail-title"></h2><p class="price" id="detail-price"></p><p class="detail-note">A little upgrade for your everyday workspace.</p><button id="detail-add" class="add-to-cart" type="button">Add to Cart</button></div></dialog>
+  <dialog id="cart-dialog" aria-labelledby="cart-title"><button class="dialog-close icon-button" type="button" aria-label="Close shopping bag">×</button><div class="dialog-content"><p class="eyebrow">YOUR WORKSPACE UPGRADE</p><h2 id="cart-title">Shopping bag</h2><ul id="cart-items"></ul><p id="cart-empty">Your bag is empty. Discover your next essential.</p><div class="cart-total"><span>Total</span><strong id="cart-total">$0.00</strong></div><p class="demo-note">This is a coursework demo. No payment or order is collected.</p><button class="continue-button" type="button">Continue exploring <span aria-hidden="true">↗</span></button></div></dialog>
+</body>
+</html>

@@ -1,0 +1,118 @@
+:root {
+  color-scheme: light;
+  --ink: #142238;
+  --muted: #65748b;
+  --line: #dbe4ef;
+  --surface: #ffffff;
+  --accent: #3868e8;
+  --accent-soft: #eaf0ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.page {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 64px 0;
+}
+.page-header {
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  letter-spacing: -0.045em;
+}
+.page-header > p:last-child,
+.note {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+.gallery-item {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgb(25 48 82 / 5%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgb(25 48 82 / 10%);
+}
+.gallery-item--featured {
+  grid-column: span 2;
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(130deg, #2047a8, #6289ff);
+}
+.item-number {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+}
+.gallery-item h2 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+.gallery-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+.note {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  background: white;
+}
+code {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: #edf2fa;
+  color: #243d72;
+}
+@media (max-width: 640px) {
+  .page {
+    padding: 40px 0;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .gallery-item {
+    min-height: 180px;
+    padding: 18px;
+  }
+  .gallery-item--featured {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 380px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item--featured {
+    grid-column: span 1;
+  }
+}

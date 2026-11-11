@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2 - Responsive Navigation</title>
+  <link rel="stylesheet" href="excercise2.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Demo">De<span>mo</span></a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Mở menu" aria-controls="navMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu" aria-label="Điều hướng chính">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link nav-link--cta">Contact us</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <p class="eyebrow">LAB 2 · EXERCISE 2</p>
+    <h1>Demo<br><span>Test</span></h1>
+    <p class="hero-copy">Demo content for the responsive navigation exercise.</p>
+    <a class="hero-button" href="#projects">Demo <span aria-hidden="true">↗</span></a>
+    <div class="demo-panel" id="services">
+      <div class="demo-dot"></div><div class="demo-dot"></div><div class="demo-dot"></div>
+      <div class="demo-content"><span class="demo-label">RESPONSIVE DEMO</span><h2>Navigation that adapts</h2><p>Flexbox sắp xếp liên kết; Media Queries thay đổi cách hiển thị; JavaScript bật/tắt trạng thái menu trên mobile.</p></div>
+    </div>
+  </main>
+</body>
+</html>
